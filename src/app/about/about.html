@@ -1,0 +1,54 @@
+<section class="about">
+  <h2>About BossBsynth</h2>
+  <p>We are passionate about creating modern, AI-driven web solutions.</p>
+
+  <button (click)="toggleMore()">
+    {{ showMore ? "Show Less" : "Read More" }}
+  </button>
+
+  <div *ngIf="showMore" class="more-info">
+    <p>
+      At BossBsynth, we blend technology, creativity, and innovation to build
+      tools that empower businesses and developers. Whether it's AI, web
+      development, or automation—we love challenges!
+    </p>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #444;
+  }
+
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #dd0031;
+  }
+
+  .about button {
+    background-color: #dd0031;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .about button:hover {
+    background-color: #b10029;
+  }
+
+  .more-info {
+    margin-top: 20px;
+    color: #333;
+    font-size: 16px;
+  }
+</style>

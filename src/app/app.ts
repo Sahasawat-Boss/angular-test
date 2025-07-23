@@ -1,12 +1,15 @@
+// File For Import Components
+
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './navbar/navbar';
 import { Footer } from './footer/footer';
 import { Hero } from './hero/hero';
+import { AboutComponent } from './about/about';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer, Hero],
+  imports: [RouterOutlet, Navbar, Footer, Hero, AboutComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
