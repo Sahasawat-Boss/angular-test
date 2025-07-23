@@ -2,10 +2,10 @@
 
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Navbar } from './navbar/navbar';
-import { Footer } from './footer/footer';
-import { Hero } from './hero/hero';
-import { AboutComponent } from './about/about';
+import { Navbar } from './components/navbar/navbar';
+import { Footer } from './components/footer/footer';
+import { Hero } from './components/hero/hero';
+import { AboutComponent } from './components/about/about';
 
 @Component({
   selector: 'app-root',
